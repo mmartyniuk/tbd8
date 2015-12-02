@@ -1,0 +1,13 @@
+﻿{
+  "appName": "abe10be020594d25b94c099c8cf2b05e",
+  "rules": "// example\nApp name is \"Car Service\".\n\nAddress has a street address, city, state, zip.\n\nUser has a name, email, user type, date joined, home address.\nUser types are driver, client. Date joined is a date field. Home address is an address.\n\nOrder has date, client, driver, source address, destination address, pickup time, order status, cost.\nDate is a date field. Order statuses are new, picked up, dropped off, cancelled.\nClient is a user. Driver is a user.\nSource address is an address. Destination address is an address.\n\nMain page title is \"Welcome to Car Service\"\nMain page content is \"<i>A Customer</i> is <b>always a customer</b>!\"",
+  "stack": {
+    "backend": [
+      "sails"
+    ],
+    "frontend": [
+      "angular"
+    ],
+    "id": 1522
+  }
+}

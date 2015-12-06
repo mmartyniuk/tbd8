@@ -12,7 +12,7 @@
         'validationSummary',
         'app.address',
         'app.user',
-        'app.order',
+        'app.order'
     ]);
 })();
 //# sourceMappingURL=app.js.map

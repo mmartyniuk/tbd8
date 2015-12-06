@@ -16,7 +16,7 @@
 /*$(ContentStart)*/
         'app.address',
         'app.user',
-        'app.order',
+        'app.order'
 /*$(ContentEnd)*/
     ]);
 })();

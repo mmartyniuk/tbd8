@@ -1,10 +1,8 @@
 module.exports = function(grunt) {
-  grunt.initConfig({
-    ts: {
-      default : {
-        src: 'assets/app/**/*.ts'
-      }
+  grunt.config.set('ts', {
+		default: {
+        src: ['assets/app/**/*.ts', '!assets/app/typings/*.ts']
     }
-  });
+	});
   grunt.loadNpmTasks('grunt-ts');
 };

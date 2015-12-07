@@ -28,7 +28,7 @@ module app.apiService {
         deleteAddress(addressId: any) {
             return this.$http.delete("/api/Addresses/" + addressId);
         }
-        getUsers(limit: any, offset?: any) {
+        getUsers(limit?: any, offset?: any) {
             if (!offset) {
                 offset = 0;
             }
@@ -50,7 +50,7 @@ module app.apiService {
         deleteUser(userId: any) {
             return this.$http.delete("/api/Users/" + userId);
         }
-        getOrders(limit: any, offset?: any) {
+        getOrders(limit?: any, offset?: any) {
             if (!offset) {
                 offset = 0;
             }

@@ -23,21 +23,21 @@ module app.address {
         NgTableParams: ng.ngtable.ITableParams) {
             
             var vm = this;
-            vm.createLink = "/addresses/edit/";
+            vm.createLink = "/orders/edit";
             vm.deleteItem = deleteItem;
             vm.editItem = editItem;
 
             init();
 
             function init() {
-                apiService.getAddresses()
-                    .success(function (dataAdd) {
-                        vm.tableParams = new NgTableParams({ count: 10 }, {data: dataAdd});
+                apiService.getOrders()
+                    .success(function (data) {
+                        vm.tableParams = new NgTableParams({ count: 10 }, { data: data });
                     });
             }
     
             function deleteItem(id) {
-                apiService.deleteAddress(id)
+                apiService.deleteOrder(id)
                     .success(function (data) {
                         $route.reload();
                     });
@@ -51,5 +51,5 @@ module app.address {
         }
     }
 
-    angular.module("app.address").controller("AddressListController", ListController);
+    angular.module("app.order").controller("OrderListController", ListController);
 }

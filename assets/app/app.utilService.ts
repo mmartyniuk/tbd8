@@ -30,7 +30,7 @@ module app.utilService {
         }
     }
 
-    class UtilServiceCollection implements IEmployee {
+    export class UtilServiceCollection implements IEmployee {
         
         userTypes= [
             { name: "Driver", value: 0 },

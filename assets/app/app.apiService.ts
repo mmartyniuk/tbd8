@@ -3,10 +3,10 @@
 module app.apiService {
     'use strict';
     
-    class apiServiceCollection {
+    export class apiServiceCollection {
         constructor(private $http: ng.IHttpService) {};
 
-        getAddresses(limit: any, offset?: any) {
+        getAddresses(limit?: any, offset?: any) {
             if (!offset) {
                 offset = 0;
             }

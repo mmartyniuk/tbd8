@@ -79,6 +79,7 @@ var app;
             };
             return apiServiceCollection;
         })();
+        apiService.apiServiceCollection = apiServiceCollection;
         factory.$inject = ['$http'];
         function factory($http) {
             return new apiServiceCollection($http);

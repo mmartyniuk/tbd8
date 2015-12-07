@@ -82,6 +82,7 @@ var app;
             };
             return UtilServiceCollection;
         })();
+        utilService_1.UtilServiceCollection = UtilServiceCollection;
         function utilService() {
             return new UtilServiceCollection();
         }

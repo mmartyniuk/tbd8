@@ -1,10 +1,11 @@
 /// <reference path='typings/angular.d.ts'/>
-/// <reference path="typings/angular-route.d.ts" />
-/// <reference path="typings/jquery.blockUI.d.ts" />
+/// <reference path="typings/angular-route.d.ts"/>
+/// <reference path="typings/jquery.blockUI.d.ts"/>
 
 interface RootScopeErrorList extends ng.IRootScopeService {
   errorList: any[];
 }
+
 ((): void => {
     'use strict';
 

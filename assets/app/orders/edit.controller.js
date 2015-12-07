@@ -1,7 +1,7 @@
 var app;
 (function (app) {
-    var address;
-    (function (address) {
+    var order;
+    (function (order) {
         'use strict';
         var EditController = (function () {
             function EditController($routeParams, $location, apiService, utilService) {
@@ -55,6 +55,6 @@ var app;
             return EditController;
         })();
         angular.module("app.order").controller("OrderEditController", EditController);
-    })(address = app.address || (app.address = {}));
+    })(order = app.order || (app.order = {}));
 })(app || (app = {}));
 //# sourceMappingURL=edit.controller.js.map

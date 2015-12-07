@@ -4,7 +4,7 @@
 /// <reference path='../app.apiService.ts'/>
 /// <reference path='../app.utilService.ts'/>
 
-module app.order {
+module app.user {
     'use strict';
 
     class ListController {
@@ -23,33 +23,30 @@ module app.order {
         NgTableParams: ng.ngtable.ITableParams) {
             
             var vm = this;
-            vm.createLink = "/orders/edit/";
+            vm.createLink = "/users/edit/";
             vm.deleteItem = deleteItem;
             vm.editItem = editItem;
 
             init();
 
             function init() {
-                apiService.getOrders()
+                apiService.getUsers()
                     .success(function (data) {
                         vm.tableParams = new NgTableParams({ count: 10 }, { data: data });
                     });
             }
-    
             function deleteItem(id) {
-                apiService.deleteOrder(id)
+                apiService.deleteUser(id)
                     .success(function (data) {
                         $route.reload();
                     });
             }
-    
             function editItem(id) {
-                $location.path("/orders/edit/" + id);
+                $location.path("/users/edit/" + id);
             }
-            
 
         }
     }
 
-    angular.module("app.order").controller("OrderListController", ListController);
+    angular.module("app.user").controller("UserListController", ListController);
 }

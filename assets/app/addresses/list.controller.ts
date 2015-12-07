@@ -44,7 +44,7 @@ module app.address {
             }
     
             function editItem(id) {
-                $location.path(vm.createLink + id);
+                $location.path("/addresses/edit/" + id);
             }
             
 

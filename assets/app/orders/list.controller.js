@@ -1,12 +1,12 @@
 var app;
 (function (app) {
-    var address;
-    (function (address) {
+    var order;
+    (function (order) {
         'use strict';
         var ListController = (function () {
             function ListController($location, $route, apiService, utilService, NgTableParams) {
                 var vm = this;
-                vm.createLink = "/orders/edit";
+                vm.createLink = "/orders/edit/";
                 vm.deleteItem = deleteItem;
                 vm.editItem = editItem;
                 init();
@@ -23,13 +23,13 @@ var app;
                     });
                 }
                 function editItem(id) {
-                    $location.path(vm.createLink + id);
+                    $location.path("/orders/edit/" + id);
                 }
             }
             ListController.$inject = ["$location", "$route", "apiService", "utilService", "NgTableParams"];
             return ListController;
         })();
         angular.module("app.order").controller("OrderListController", ListController);
-    })(address = app.address || (app.address = {}));
+    })(order = app.order || (app.order = {}));
 })(app || (app = {}));
 //# sourceMappingURL=list.controller.js.map

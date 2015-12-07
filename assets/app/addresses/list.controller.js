@@ -23,7 +23,7 @@ var app;
                     });
                 }
                 function editItem(id) {
-                    $location.path(vm.createLink + id);
+                    $location.path("/addresses/edit/" + id);
                 }
             }
             ListController.$inject = ["$location", "$route", "apiService", "utilService", "NgTableParams"];

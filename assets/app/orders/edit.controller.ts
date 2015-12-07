@@ -4,7 +4,7 @@
 /// <reference path='../app.utilService.ts'/>
 /// <reference path='../addresses/edit.controller.ts'/>
 
-module app.address {
+module app.order {
     'use strict';
 
     class EditController  {

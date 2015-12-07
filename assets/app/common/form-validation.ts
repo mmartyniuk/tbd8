@@ -101,8 +101,6 @@
             return new validateInteger;
         }
     }
-        
-
 
     class showErrors {
         public static $inject: Array<string> = [];

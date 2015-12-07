@@ -1,10 +1,6 @@
 /// <reference path='typings/angular.d.ts'/>
 /// <reference path='app.config.ts'/>
 
-/*interface RootScopeErrorList extends ng.IRootScopeService {
-  errorList: any[];
-}*/
-
 module app.httpInterceptor {
     'use strict';
     
